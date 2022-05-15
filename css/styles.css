@@ -617,6 +617,7 @@ button {
 }
 
 .btn-btn {
+  font-size: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
