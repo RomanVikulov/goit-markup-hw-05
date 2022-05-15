@@ -24,9 +24,12 @@
 }
 
 body {
+  padding-top: 80px;
+
   font-family: 'Roboto', sans-serif;
   background: var(--fon-color);
   color: var(--primary-text-color);
+
 }
 
 p,
@@ -90,7 +93,14 @@ button {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
+  background-color: var(--fon-color);
   border-bottom: 1px solid #ececec;
+
 }
 
 .container.header-nav {
