@@ -170,6 +170,8 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -208,6 +210,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-tel:hover .header-icons,
@@ -536,6 +539,7 @@ button {
   background-color: var(--fon-color);
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover,
@@ -578,14 +582,18 @@ button {
   display: flex;
   width: 170px;
   height: 92px;
+  padding: 16px 32px;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   border: 1px solid #AFB1B8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.clients-link {
-  padding: 16px 32px;
+.clients-icon {
+  fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:not(:last-child) {
@@ -599,9 +607,6 @@ button {
   fill: var(--accent-color);
 }
 
-.clients-icon {
-  fill: var(--icon-color)
-}
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
@@ -685,6 +690,7 @@ button {
   height: 40px;
   background-color: var(--icon-color-bg);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks-list .networks-item:not(:first-child) {
@@ -740,6 +746,7 @@ button {
   background-color: var(--accent-color);
   color: var(--fon-color);
   box-shadow: var(--box-shadow-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Список проектов */
@@ -791,9 +798,11 @@ button {
   font-style: normal;
   color: var(--secondary-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
 .project-link:focus {
   box-shadow: var(--box-shadow-carts);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
