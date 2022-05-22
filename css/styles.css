@@ -188,9 +188,9 @@ button {
 }
 
 .header-icons {
-  display: inline-block;
   margin-right: 10px;
   fill: var(--secondary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list .header-item+.header-item {
@@ -303,11 +303,12 @@ button {
   width: 100%;
   height: 100%;
   background-color: var(--bgk-backdrop);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), hidden 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -519,6 +520,7 @@ button {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-list {
@@ -538,7 +540,7 @@ button {
   background-color: var(--fon-color);
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover,
@@ -685,11 +687,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background-color: var(--icon-color-bg);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks-list .networks-item:not(:first-child) {
@@ -738,6 +740,7 @@ button {
   color: var(--primary-text-color);
   padding: 6px 22px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-btn:hover,
@@ -745,7 +748,7 @@ button {
   background-color: var(--accent-color);
   color: var(--fon-color);
   box-shadow: var(--box-shadow-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* Список проектов */
@@ -839,7 +842,8 @@ button {
 
   color: var(--secondary-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
